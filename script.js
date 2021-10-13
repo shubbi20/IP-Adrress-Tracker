@@ -9,9 +9,9 @@ var mymap = L.map('ipamap').setView([30.32443, 78.03392], 4);
 const urlo='https://api.maptiler.com/maps/streets/256/{z}/{x}/{y}.png?key=4XmVf2lVa4G736UQuKnr';
 const attribution='&copy; <a href="https://www.maptiler.com/copyright/" target="_blank">&copy; MapTiler</a> <a href="https://www.openstreetmap.org/copyright" target="_blank">&copy; OpenStreetMap contributors</a>';
 
-L.tileLayer(urlo , {attribution}).addTo(mymap);
+L.tileLayer(urlo , {attribution}).addTo(mymap);    //we need two argument one is url and second is attribution(to understand this better see the maptiler) then i am adding the time to the map
 
-var marker =L.marker([30.32443, 78.03392]).addTo(mymap);
+var marker =L.marker([30.32443, 78.03392]).addTo(mymap);   //here i am adding the marker to the map.
 
 //***************************************************************************** */
 //elements that we have to update
@@ -29,7 +29,7 @@ const submit_btn= document.getElementById('search_btn');
 
 //url stufs
 
-const secret_api= secreto_api;
+const secret_api= secreto_api;       //this is my api id
 const api_url= 'https://geo.ipify.org/api/';
 let curr_version= 'v2/';
 
