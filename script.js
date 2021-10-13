@@ -1,5 +1,7 @@
 
+
 import secreto_api from "./api.js";
+
 //using leaflet api for geolocation map and maptiler site for map tile.
 
 var mymap = L.map('ipamap').setView([30.32443, 78.03392], 4);
@@ -28,7 +30,6 @@ const submit_btn= document.getElementById('search_btn');
 //url stufs
 
 const secret_api= secreto_api;
-// let deploysite_url= 'https://cors-anywhere.herokuapp.com/' ;
 const api_url= 'https://geo.ipify.org/api/';
 let curr_version= 'v2/';
 
@@ -38,11 +39,10 @@ async function datafetch(default_ip) {
 
     try{
         if(default_ip == undefined){
-            //${deploysite_url}
            var ip_url = `${api_url}${curr_version}country,city?apiKey=${secreto_api}` ;
        }
        else {
-          // ${deploysite_url}
+         
            var ip_url = `${api_url}${curr_version}country,city?apiKey=${secreto_api}&ipAddress=${default_ip}` ;
        }
     const response=await fetch(ip_url, {cache:'no-cache'});
