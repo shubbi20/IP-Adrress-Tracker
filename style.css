@@ -1,0 +1,141 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 12px;
+}
+
+.top{
+    height: 11rem;
+    width: 100%;
+    text-align: center;
+    background-image: url(images/pattern-bg.png);
+}
+
+.top h1{
+    font-size: 2.4rem;
+    padding-top: 1rem;
+    color:white;
+}
+#input_text{
+    height: 3rem;
+    width: 34rem;
+    margin-top: 1.4rem;
+    border-radius: 1rem;
+
+}
+.submit-btn{
+    height: 3rem;
+    width:2.8rem;
+    background-color:rgb(52, 91, 206);
+    border-radius: 0.4rem;
+}
+
+.middlesection{
+    position: absolute;
+    top:8.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    height:7.5rem;
+    width: 77rem;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+    left: 50%;
+    transform: translate(-50% , 0.2%);
+    background-color: white;
+    border-radius: 1rem;
+    z-index: 2;
+
+}
+
+.box{
+    border-right: 0.05em solid gray;
+    height: 4.2rem;
+    width: 14rem;
+    text-align: center;
+
+}
+
+.box h1{
+    font-size: 1.5rem;
+}
+.box4 h1{
+    font-size: 1.5rem;
+}
+
+.box4{
+    height: 4.2rem;
+    width: 14rem;
+    text-align: center;
+}
+
+#ipamap{ 
+height: 39.5rem;
+z-index: 1; 
+}
+
+h5{
+    color: hsl(0, 0%, 61%);
+}
+
+@media only screen and (max-width: 935px){
+    html{
+        font-size: 10px;
+    }
+    #ipamap{
+        height: 75rem;
+    }
+
+
+}
+@media only screen and (max-width: 770px){
+    html{
+        font-size: 9px;
+    }
+    #ipamap{
+        height: 85rem;
+    }
+    .middlesection{
+        height: 10rem;
+        width:60rem;
+    }
+
+
+}
+
+@media only screen and (max-width: 541px){
+    html{
+        font-size: 11px;
+    }
+    #ipamap{
+        height: 63rem;
+    }
+    h5{
+        font-size: 1.1rem;
+    }
+    .middlesection{
+        height: 26rem;
+        width: 25rem;
+      
+        
+    }
+    .box{
+        width: 19.5rem;
+        height:5rem;
+        border-right: none;
+        border-bottom: 00.1rem solid gray;
+        margin-bottom: 1em;
+    }
+    .box4{
+        width: 19.5rem;
+        height:5rem;
+        
+    }
+    #input_text{
+        width: 20rem;
+    }
+}

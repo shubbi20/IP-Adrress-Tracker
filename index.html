@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+    integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+    crossorigin=""/>
+ 
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+    integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+    crossorigin=""></script>
+
+    <link rel="stylesheet" href="style.css">
+    <script type="module" defer src="script.js"></script>
+
+    
+</head>
+<body>
+   <div class="top">
+        <h1>IP Address Tracker </h1>
+        <div class="textsection">
+            <input id="input_text" type="text" placeholder="103.87.207.188-  Type here">
+            <button id="search_btn" class="submit-btn">
+                <input  type="image" src="images/arrowicon.png" alt="arrow_submit"  >
+            </button>
+
+        </div>
+    </div>     
+
+        <div class="middlesection">
+      
+            <div class="box">
+               <h5>IP ADDRESS</h5> 
+              <h1 id="ip_text">103.87.207.188</h1>
+            </div>
+
+            <div class="box">
+                <h5>LOCATION</h5>
+                <h1 id="location_text">Dehra Dūn IN</h1>
+            </div>
+
+            <div class="box">
+              <h5>TIMEZONE</h5>  
+              <h1 id="timezone_text">+05 : 30</h1>
+            </div>
+
+            <div class="box4">
+                <h5>ISP</h5>
+               <h1 id="isp_text">Netflix Durga Webtech Pvt Ltd</h1>
+            </div>
+
+
+        </div>
+        
+          
+            <div id="ipamap">
+
+           </div>
+   
+  
+</body>
+</html>
